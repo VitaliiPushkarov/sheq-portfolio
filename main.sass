@@ -1,0 +1,853 @@
+$title-fz: 84px
+$title-lh: 84px
+$subtitle-fz: 22px
+$subtitle-lh: 44px
+
+$main-c: #FA8207
+$dark-liliac: #65678b
+$light-liliac: #dcdffd
+$black: #0e0e15
+$grey: #a7abd0
+$lil: #b5baf8
+$light-orange: #FBBE4C
+
+
+*
+    box-sizing: border-box
+body
+    color: #fff
+    background-color: $black
+    font-family: Montserrat, sans-serif
+    font-weight: 500
+    font-size: 14px
+    line-height: 18px
+    margin: 0
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary
+    display: block
+h1,h2,h3,h4,h5,h6,p
+    margin: 0
+p
+    font-weight: 300
+    font-size: 16px
+a
+    text-decoration: none
+    color: $black
+h3
+    font-size: 24px
+    line-height: 30px
+img
+    vertical-align: middle
+    max-width: 100%
+    display: inline-block
+    object-fit: cover
+.container
+    max-width: 1366px
+    margin: 0 auto
+    padding-left: 56px
+    padding-right: 56px
+.section
+    margin-top: 0
+    margin-bottom: 0
+    padding-top: 74px
+    padding-bottom: 74px
+    &.hero-sec
+        margin-top: 86px
+    &.section-100vh
+        height: 100vh
+        display: flex
+        justify-content: center
+        align-items: center
+.mt-72
+    margin-top: 72px
+.mb-32
+    margin-bottom: 32px
+/* Padding */
+.padding-top-0
+    padding-top: 0
+.padding-bottom-55
+    padding-bottom: 55px
+.title-wrapper
+    display: grid
+    grid-template-columns: 1fr 1.5fr
+    margin-bottom: 32px
+    gap: 32px
+.title
+    color: $black
+    font-size: 36px
+    line-height: 40px
+    padding: 15px  35px
+    border: 1px solid $black
+    border-radius: 100px
+    display: flex
+    align-items: center
+    justify-content: center
+    &.white-title
+        border: 1px solid #fff
+        color: #fff
+        grid-area: 1/1/2/1
+.subtitle
+    color: $black
+    font-size: $subtitle-fz
+    font-weight: 400
+    line-height: 22px
+    &.white-subtitle
+        color: #fff
+.h1
+    font-size: 58px
+    line-height: 110%
+    text-transform: uppercase
+    font-weight: 700
+    span
+        font-weight: 100
+        font-style: italic
+.h6
+    color: $light-liliac
+    font-size: 18px
+    line-height: 22px
+    font-weight: 400
+    text-transform: uppercase
+.h4
+    font-size: 24px
+    font-weight: 500
+    line-height: 29px
+.paragraph-big
+    font-size: 24px
+    font-weight: 500
+    text-transform: uppercase
+    color: $light-liliac
+    line-height: 110%
+    .main-c
+        color: $main-c
+.text-upper
+    text-transform: uppercase
+/* Colors and Backgrounds */
+.black
+    color: $black
+.light-liliac
+    color: $light-liliac
+.dark-liliac
+    color: $dark-liliac
+.main-c
+    color: $main-c
+.lil
+    color: $lil
+.lil-bg
+    background-color: $lil
+.white
+    background-color: #fff
+
+/* Hero */
+.hero-text-wrapper
+    display: flex
+    flex-direction: column
+    .first-row
+        display: flex
+        align-items: flex-start
+        .box-wrapper
+            border-radius: 10px
+            padding: 0px 32px
+            display: flex
+            align-items: center
+            justify-content: space-between
+            gap: 26px
+            overflow: hidden
+        &.lil-bg
+            background-color: $lil
+        .img-wrapper
+            display: flex
+            .round-img
+                border-radius: 100%
+                object-fit: cover
+                width: 68px
+                height: 68px
+        .number
+            display: block
+            font-size: 24px
+            line-height: 24px
+            font-weight: 400
+            letter-spacing: -.03em
+    .second-row
+        display: flex
+        align-items: center
+        justify-content: flex-start
+        .hero-subtext
+            font-weight: 300
+            line-height: 20px
+    .third-row
+        display: flex
+        align-items: center
+        justify-content: space-between
+        .third-row-wrapper
+            display: flex
+            align-items: center
+            gap: 32px
+            .arrow-right
+                width: 150px
+                height: 54px
+            .border-text
+                padding: 15px
+                border: 1px solid #fff
+                border-radius: 100px
+                transform: rotate(350deg)
+        .hero-link
+            display: flex
+            justify-content: flex-start
+            align-items: stretch
+            flex-flow: row
+            .btn-container
+                background-color: $main-c
+                border-radius: 100px
+                padding: 14px 32px 12px
+                font-size: 26px
+                line-height: 32px
+                display: flex
+                align-items: center
+                justify-content: center
+                font-weight: 600
+                white-space: nowrap
+                text-transform: uppercase
+                transition: background-color .2s ease-in-out
+                &:hover
+                    background-color: $light-liliac
+                &.arrow
+                    border: 2px dashed #000
+                    flex: none
+                    margin-top: 0
+                    margin-bottom: 0
+                    margin-left: -12px
+                    padding: 12px
+                    transition: background-color .2s ease-in-out
+                    &:hover
+                        background-color: $light-liliac
+/* Navbar */
+.nav-wrap
+    position: relative
+    z-index: 1000
+    top: 0
+.navbar
+    padding-left: 56px
+    padding-right: 56px
+    max-width: 1366px
+    bottom: auto
+    left: 0%
+    right: 0%
+    top: 0%
+    background-color: $black
+    width: 100%
+    margin-left: auto
+    margin-right: auto
+    &.fixed
+        position: fixed
+        z-index: 1000
+        border: 1px solid #fff
+
+.container-m.nav
+    justify-content: center
+    align-items: center
+    height: 84px
+    padding-top: 0
+    padding-bottom: 0
+    margin-right: auto
+    margin-left: auto
+    display: flex
+.navmenu
+    float: right
+    position: relative
+.nav-brand
+    float: left
+    color: #fff
+    text-decoration: none
+    font-weight: 700
+    position: relative
+    &:hover
+        color: $dark-liliac
+.brand-logo
+    justify-content: flex-start
+    align-items: center
+    display: flex
+    font-size: 26px
+    margin-right: auto
+.navlink
+    vertical-align: top
+    color: #fff
+    text-align: center
+    margin-left: auto
+    margin-right: auto
+    padding: 20px
+    text-decoration: none
+    display: inline-block
+    position: relative
+    font-size: 20px
+    font-weight: 400
+    &:hover
+        color: $dark-liliac
+.m-wrap
+    display: flex
+    margin-left: auto
+    a
+        background-color: transparent
+        border-radius: 100px
+        padding: 20px 40px
+        border: 1px solid $main-c
+        font-size: 20px
+        color: $main-c
+        text-decoration: none
+        transition: .2s all ease-in-out
+        &:hover
+            background-color: $main-c
+            color: #fff
+.burger-menu
+    display: none
+    flex-direction: column
+.burger-menu div 
+  width: 25px
+  height: 3px
+  background-color: #fff
+  margin: 2px 0
+.nav-overlay 
+  display: none
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background-color: rgba(0, 0, 0, 0.5)
+  z-index: 999 /* Ensure the overlay is below the navbar but above other content */
+/* IMG container */
+.img-row
+    display: flex
+    gap: 32px
+    overflow: hidden
+    .line-img
+        width: 300px
+        height: 300px
+        object-fit: cover
+        transition: transform 1s ease-in-out
+        &:nth-of-type(odd)
+            transform: rotate(25deg)
+        &:nth-of-type(even)
+            transform: rotate(-25deg)
+            
+/* Grid Templates */
+.grid-3-col
+    display: grid
+    grid-template-columns: repeat(3,1fr)
+    grid-template-rows: auto
+    gap: 16px
+    .box-wrapper
+        border-radius: 10px
+        padding: 32px
+        background-color: #1a1820
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        justify-content: space-between
+        gap: 26px
+        overflow: hidden
+        &.lil-bg
+            background-color: $lil
+        .img-wrapper
+            display: flex
+            .round-img
+                border-radius: 100%
+                object-fit: cover
+                width: 96px
+                height: 96px
+                filter: grayscale(1)
+                &.dashed
+                    border: 2px dashed #fff
+        .number
+            display: block
+            font-size: 96px
+            line-height: 96px
+            font-weight: 700
+            letter-spacing: -.03em
+.content-wrapper
+    display: grid
+    grid-template-columns: 1fr 1.5fr
+    gap: 32px
+    .content-img
+        height: 100%
+    .content-items
+        display: grid
+        grid-template-columns: 1fr 1fr
+        gap: 16px
+        .content-item
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            gap: 16px
+            .content-img
+                width: 80px
+                height: 80px
+                svg
+                    width: 100%
+                    height: 100%
+            .content-text
+                display: flex
+                align-items: flex-start
+                flex-direction: column
+                gap: 16px
+                .paragraph-big,p
+                    color: $black
+                    text-transform: none
+
+/* Benefits Section */
+.benefits-wrapper
+    display: flex
+    align-items: flex-start
+    flex-direction: column
+    gap: 16px
+    background-color: #fff
+    padding: 20px 100px 20px 20px
+    .benefits-row
+        display: grid
+        grid-template-columns: .5fr .5fr 1fr
+        gap: 32px
+        .benefits-number
+            color: $black
+            font-weight: 600
+            font-size: 84px
+            line-height: 84px
+            text-align: center
+            align-self: center
+        .benefits-img
+            width: 100%
+            height: 150px
+        .benefits-text
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            .paragraph-big
+                font-weight: 500
+                text-transform: none
+            .paragraph-big, p
+                color: $black
+/* Advantages Section */
+.advantages-wrapper
+    display: grid
+    grid-template-columns: repeat(4,1fr)
+    gap: .1px
+    .advantages-box
+        display: flex
+        align-items: flex-start
+        position: relative
+        flex-direction: column
+        padding: 20px
+        gap: 16px
+        border: 1px solid $black
+        transition: all .2s ease-in-out
+        cursor: pointer
+        &.img-container
+            padding: 0
+        .paragraph-big
+            font-weight: 500
+            text-transform: none
+        .paragraph-big, p
+            color: $black
+        .advantages-img
+            height: 100%
+        &:hover
+            background-color: $black
+            .paragraph-big, p
+                color: #fff
+/* Swiper */
+.swiper-slide
+    flex: none
+    align-items: flex-start
+    width: 100%
+    height: 380px
+    display: flex
+    position: relative
+    overflow: hidden
+    gap: 16px
+    .swiper-img
+        height: 100%
+        width: 100%
+    .team-card-text
+        padding: 20px
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        border: 1px solid #fff
+        height: 380px
+        gap: 16px
+        .h3, p
+            color: #fff
+        .services-list
+            margin: 0
+            margin-left: 12px
+            padding: 0
+            .services-item
+                font-size: 16px
+                font-weight: 300
+                margin-bottom: 10px
+                &::marker
+                    color: $main-c
+.slider-wrapper
+    display: flex
+    justify-content: flex-end
+    margin-top: 12px  
+.swiper-prev, .swiper-next
+    cursor: pointer
+.testimonial-slider
+    flex: none
+    align-items: flex-start
+    width: 33.333% !important
+    height: 300px
+    display: flex
+    position: relative
+    overflow: hidden
+    gap: 16px
+    .testimonials-slide
+        margin-right: 16px
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        justify-content: space-between
+        padding: 20px
+        border: 1px solid $black
+        height: 300px
+        color: $black
+        .testimonials-bottom
+            display: flex
+            align-items: center
+            gap: 16px
+            .round-img
+                border-radius: 100%
+                width: 64px
+                height: 64px
+            .paragraph-big
+                text-transform: none
+                color: $black
+
+.contacts_wrapper
+    display: grid
+    grid-template-columns: 1.5fr 1fr
+    gap: 10px
+.contacts_form
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    gap: 10px
+    label
+        font-size: 20px
+    &-control
+        height: 45px
+        flex: 0 0 auto
+    input,textarea
+        border-radius: 15px
+        width: 100%
+        background-color: $light-liliac
+    input[type="text" i] 
+        padding: 5px
+        font-size: 18px
+    .btn
+        text-transform: uppercase
+        font-weight: 600
+        background-color: $main-c
+        color: #fff
+        border: 1px solid #fff
+        cursor: pointer
+        transition: background-color .2s ease-in-out, color .2s ease-in-out
+        &:hover
+            background-color: $light-liliac
+            color: $black
+.checkbox-wrapper
+    display: flex
+    justify-content: center
+    align-items: center
+    gap: 5px
+input[type="checkbox" i]
+    width: 24px
+    height: 24px
+.contacts_map
+    iframe
+        width: 100%
+        height: 100%
+.footer-sec
+    .container
+        padding: 20px 56px
+        background-color: $black
+        border: 1px solid #fff
+.footer-wrapper
+    display: grid
+    grid-template-columns: repeat(4,1fr)
+    .wrapper
+        display: flex
+        flex-direction: column
+        gap: 25px
+    .h3
+        font-size: 24px
+        color: #fff
+        font-weight: 500
+    h3, .paragraph
+        color: #fff
+    .contacts-wrapper,.points-wrapper
+        display: flex
+        flex-direction: column
+        gap: 10px
+        align-items: flex-start
+    .paragraph
+        font-size: 18px
+        &:hover
+            color: $dark-liliac
+.cookie-banner 
+  position: fixed
+  bottom: 0
+  color: #fff
+  text-align: center
+  z-index: 1000
+  right: 0
+
+
+.cookie-button 
+    border: 1px solid $black
+    background-color: $black
+    border-radius: 100px
+    justify-content: center
+    align-items: center
+    width: 100%
+    padding: 10px 22px
+    font-size: 16px
+    font-weight: 400
+    line-height: 20px
+    transition: all .3s
+    display: flex
+    text-transform: uppercase
+    color: #fff
+    cursor: pointer
+    &:hover
+        background-color: #fff
+        color: $black
+
+.cookies-banner
+    grid-row-gap: 0px
+    border: 2px solid $black
+    background-color: #fff
+    border-radius: 20px
+    flex-direction: column
+    width: 330px
+    height: auto
+    margin-bottom: 25px
+    margin-left: 56px
+    margin-right: 90px
+    padding: 25px
+    display: flex
+.text-x
+    display: flex
+    margin-bottom: 20px
+    gap: 12px
+.text-banner
+    color: $black
+    font-size: 16px
+    line-height: 20px
+    text-align: left
+.container-tp
+    padding: 20px
+    background-color: $light-liliac
+    border-radius: 15px
+    display: flex
+    justify-content: center
+    align-items: center
+    gap: 25px
+    .sub-wrapper
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        gap: 15px
+        max-width: 300px
+        .h-thankyou
+            color: $black
+            font-size: 36px
+            text-transform: uppercase
+            line-height: 36px
+        .paragraph-big
+            text-transform: none
+            color: $black
+        .btn-tp
+            padding: 15px 20px
+            background-color: $dark-liliac
+            color: #fff
+            border: 1px solid $dark-liliac
+            font-size: 20px
+            border-radius: 15px
+            width: 100%
+            display: flex
+            justify-content: center
+            align-items: center
+            &:hover
+                background-color: $light-liliac
+                color: $black
+    .gif-subscr
+        height: 300px
+        width: 300px
+        object-fit: cover
+        border-radius: 15px
+@keyframes spin 
+  0%  
+    transform: rotate(0deg) 
+  100%  
+    transform: rotate(360deg) 
+
+@media screen and ( max-width: 1440px )
+    .container
+        max-width: 1366px
+    
+@media screen and ( max-width: 991px )
+    .container,.container-m.nav
+        max-width: 768px
+        padding-left: 32px
+        padding-right: 32px
+    .navbar
+        padding-left: 0
+        padding-right: 0
+    .navmenu 
+        display: none
+        flex-direction: column
+        position: fixed
+        padding-top: 20px
+        left: 0
+        width: 100%
+        height: 100vh /* Adjust according to the height of your navbar */
+        background-color: $black
+        z-index: 1001 /* Ensure the nav menu is above the overlay */
+    .navmenu.active 
+        display: block
+        overflow: visible
+        position: absolute
+        left: 0
+        right: 0
+        top: 85px
+    .burger-menu 
+        display: flex
+    .nav-overlay.active 
+        display: block
+    .navlink
+        position: relative
+        display: block
+        padding: 20px
+        font-size: 20px
+    .m-wrap 
+        display: none
+    .title
+        font-size: 64px
+        line-height: 64px
+    .subtitle
+        font-size: 20px
+        line-height: 20px    
+    .h1
+        font-size: 58px
+    .hero-text-wrapper .third-row .hero-link
+        width: 100%
+    .hero-text-wrapper .third-row .third-row-wrapper .hero-star
+        width: 50px
+        height: 50px
+    .swiper-slide
+        flex-direction: column
+        height: 680px
+        .team-card-text
+            height: 440px
+    .testimonial-slider
+        height: 300px
+    .grid-3-col
+        grid-template-columns: 1.5fr 1fr 1fr
+        grid-template-rows: auto
+        margin-top: 48px
+        .second
+            grid-area: 1/2/2/4
+        .last
+            grid-area: 2/1/3/4
+    .services-wrapper
+        grid-template-columns: 1fr 1fr
+    .footer-sec
+        .container
+            padding-left: 32px
+            padding-right: 32px
+    .footer-wrapper
+        gap: 15px
+        grid-template-columns: repeat(3,1fr)
+    .content-wrapper
+        grid-template-columns: auto
+    .title-wrapper
+        grid-template-columns: auto
+    .hero-text-wrapper .first-row .box-wrapper
+        flex-direction: column
+        padding: 0
+    .hero-text-wrapper .third-row
+        flex-direction: column
+        align-items: flex-start
+    .advantages-wrapper
+        grid-template-columns: 1fr 1fr
+    .testimonial-slider
+        width: 66.66% !important
+
+@media screen and ( max-width: 767px )
+    .container,.container-m.nav
+        max-width: 568px
+        padding-left: 24px
+        padding-right: 24px
+    .title
+        font-size: 42px
+        line-height: 42px
+    .paragraph-big
+        font-size: 20px
+    .hero-text-wrapper
+        gap: 10px
+    .hero-text-wrapper .third-row, .hero-text-wrapper .second-row
+        flex-wrap: wrap
+    .grid-3-col .box-wrapper .img-wrapper
+        flex-wrap: wrap
+    .contacts_wrapper
+        grid-template-columns: 1fr
+    .contacts_map
+        iframe
+            height: 300px
+    .footer-wrapper
+        grid-template-columns: 1fr 1fr
+        gap: 20px
+    .container-tp
+        flex-direction: column
+    .hero-text-wrapper .first-row .box-wrapper
+        display: none
+    .advantages-wrapper
+        grid-template-columns: 1fr
+@media screen and (max-width: 479px)
+    .container,.container-m.nav
+        max-width: 420px
+        padding-left: 12px
+        padding-right: 12px
+    .title
+        font-size: 30px
+        line-height: 30px
+    .subtitle
+        line-height: 28px
+    .grid-3-col
+        grid-template-columns: 1fr
+    .grid-3-col .second
+        grid-area: auto
+    .grid-3-col .last
+        grid-area: auto
+    .services-wrapper
+        grid-template-columns: 1fr
+    .footer-wrapper
+        grid-template-columns: 1fr
+        gap: 25px
+    .cookies-banner
+        margin-left: auto
+        margin-right: auto
+    .cookie-banner
+        left: 0
+    .hero-text-wrapper .third-row
+        gap: 10px
+    .third-row-wrapper
+        svg
+            display: none
+    .hero-text-wrapper .third-row .third-row-wrapper .border-text
+        transform: rotate(0deg)
+    .swiper-slide
+        height: 100%
+        .team-card-text
+            height: 100%
+    .testimonial-slider
+        width: 100% !important
